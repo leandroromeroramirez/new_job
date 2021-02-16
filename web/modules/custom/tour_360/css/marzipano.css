@@ -1,0 +1,460 @@
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+#titleBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 40px;
+  height: 40px;
+  text-align: center;
+  display: none;
+}
+
+.mobile #titleBar {
+  height: 50px;
+  right: 50px;
+}
+
+/* If there is a fullscreen button the title bar must make space for it */
+body.fullscreen-enabled #titleBar {
+  right: 80px;
+  display: none;
+}
+
+body.fullscreen-enabled.mobile #titleBar {
+  right: 100px;
+  display: none;
+}
+
+/* If there are multiple scenes the title bar must make space for the scene list toggle */
+body.multiple-scenes #titleBar {
+  left: 40px;
+}
+
+body.multiple-scenes.mobile #titleBar {
+  left: 50px;
+}
+
+#titleBar .sceneName {
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  padding: 5px;
+  background-color: rgb(58,68,84);
+  background-color: rgba(58,68,84,0.8);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.mobile #titleBar .sceneName {
+  line-height: 40px;
+}
+
+#fullscreenToggle {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  background-color: rgb(28 179 233);
+}
+
+.mobile #fullscreenToggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+body.fullscreen-enabled #fullscreenToggle {
+  display: block;
+  margin-right: calc(50% - 50vw);
+}
+
+#fullscreenToggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+
+#fullscreenToggle .icon.on {
+  display: none;
+}
+
+#fullscreenToggle .icon.off {
+  display: block;
+}
+
+#fullscreenToggle.enabled .icon.on {
+  display: block;
+}
+
+#fullscreenToggle.enabled .icon.off {
+  display: none;
+}
+
+#autorotateToggle {
+  position: absolute;
+  top: 12px;
+  background-color: rgb(28 179 233);
+  opacity: 1;
+  border-radius: 50% 0% 0% 50%;
+}
+
+.mobile #autorotateToggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* If there is a fullscreen button, autorotate must placed a bit to the left */
+body.fullscreen-enabled #autorotateToggle {
+  right: 40px;
+
+}
+
+body.fullscreen-enabled.mobile #autorotateToggle {
+  margin-right: calc(50% - 50vw);
+}
+
+#autorotateToggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+#autorotateToggle .icon.on {
+  display: none;
+}
+
+#autorotateToggle .icon.off {
+  display: block;
+}
+
+#autorotateToggle.enabled .icon.on {
+  display: block;
+}
+
+#autorotateToggle.enabled .icon.off {
+  display: none;
+}
+
+#sceneListToggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin-left: calc(50% - 50vw);
+}
+
+.mobile #sceneListToggle {
+}
+
+#sceneListToggle .text {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 100%;
+  line-height: 30px;
+}
+
+#sceneListToggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
+
+#sceneListToggle .icon.on {
+  display: none;
+  left: -4px;
+  position: relative;
+  top: 0;
+}
+
+#sceneListToggle .icon.off {
+  display: block;
+}
+
+#sceneListToggle.enabled .icon.on {
+  display: block;
+}
+
+#sceneListToggle.enabled .icon.off {
+  display: none;
+}
+
+#sceneList {
+  margin-left: calc(50% - 50vw);
+  position: absolute;
+  top: 60px;
+  padding: 8px 0px 0px 10px;
+  left: -220px;
+  transition: 0.2s;
+}
+#sceneList::before {
+  content: "";
+  width: 159px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #00000091;
+  position: absolute;
+  border-radius: 10px;
+}
+
+#sceneList .scenes {
+position: relative;
+}
+
+#sceneList.enabled {
+  transition: 0.2s;
+  left: 5px;
+}
+.mobile #sceneList .scenes {
+  height: 100%;
+}
+
+#sceneList .scene {
+  display: block;
+  width: 100%;
+}
+
+.mobile #sceneList .scene {
+  height: 45px;
+}
+
+#sceneList .scene .text {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobile #sceneList .scene .text {
+  line-height: 40px;
+}
+
+.no-touch #sceneList .scene:hover {
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+
+#sceneList .scene.current {
+
+}
+
+/* Hide scene list when only a single scene exists */
+body.single-scene #sceneList, body.single-scene #sceneListToggle {
+  display: none;
+}
+
+/* Link hotspot */
+
+.link-hotspot {
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.no-touch .link-hotspot:hover {
+  opacity: 1;
+}
+
+.mobile .link-hotspot {
+  width: 50px;
+  height: 50px;
+}
+
+.link-hotspot-icon {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.link-hotspot-tooltip {
+  position: absolute;
+  left: 100%;
+  top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
+
+  margin-left: 3px;
+
+  font-size: 16px;
+
+  max-width: 300px;
+
+  padding: 8px 10px;
+
+  border-radius: 5px;
+
+  background-color: rgb(58,68,84);
+  background-color: rgba(58,68,84,0.8);
+
+  color: #fff;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  -ms-transform: translateX(-8px);
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      opacity 0.3s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              opacity 0.3s;
+}
+
+.mobile .link-hotspot {
+  top: 19px; /* ( 70 - (16 + 2*8) ) / 2 */
+}
+
+.no-touch .link-hotspot:hover .link-hotspot-tooltip {
+  opacity: 1;
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* Prevent tooltip from triggering */
+.link-hotspot-tooltip {
+  pointer-events: none;
+}
+.no-touch .link-hotspot:hover .link-hotspot-tooltip {
+  pointer-events: all;
+}
+
+/* Fallback mode without pointer-events (IE8-10) */
+.tooltip-fallback .link-hotspot-tooltip {
+  display: none;
+}
+.no-touch .tooltip-fallback .link-hotspot:hover .link-hotspot-tooltip {
+  display: block;
+}
+
+/* Info hotspot */
+
+.info-hotspot {
+  line-height: 1.2em;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.2s 0.2s;
+  transition: opacity 0.2s 0.2s;
+}
+
+.no-touch .info-hotspot:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.info-hotspot.visible {
+  opacity: 1;
+}
+
+
+/*
+.mobile .info-hotspot .info-hotspot-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.desktop.no-touch .info-hotspot .info-hotspot-header:hover {
+  width: 260px;
+  border-radius: 5px;
+  -webkit-transition: width 0.3s ease-in-out,
+                      border-radius 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out,
+              border-radius 0.3s ease-in-out;
+} */
+
+
+/* View control buttons */
+
+.viewControlButton {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+
+body.view-control-buttons .viewControlButton {
+  display: block;
+}
+
+/* Hide controls when width is too small */
+@media (max-width: 600px) {
+  body.view-control-buttons .viewControlButton {
+    display: none;
+  }
+}
+
+.viewControlButton .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Center is at margin-left: -20px */
+.viewControlButton-1 {
+  margin-left: -145px;
+}
+.viewControlButton-2 {
+  margin-left: -95px;
+}
+.viewControlButton-3 {
+  margin-left: -45px;
+}
+.viewControlButton-4 {
+  margin-left: 5px;
+}
+.viewControlButton-5 {
+  margin-left: 55px;
+}
+.viewControlButton-6 {
+  margin-left: 105px;
+}

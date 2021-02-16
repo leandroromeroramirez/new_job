@@ -1,0 +1,23 @@
+system.admin_config_tour_360:
+  path: '/admin/config/system/tour_360'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Tour 360'
+  requirements:
+    _permission: 'administer site configuration'
+
+tour_360.pop_up_controller:
+  path: 'pop-up/{world}/{type}/{id}'
+  defaults:
+    _controller: '\Drupal\tour_360\Controller\PopUpController::getPopUp'
+    _title: 'PopUp'
+  requirements:
+    _permission: 'access content'
+
+tour_360.plazoleta_config:
+  path: '/admin/config/system/plazoleta_config'
+  defaults:
+    _title: 'Plazoleta config'
+    _form: 'Drupal\tour_360\Form\PlazoletaConfigForm'
+  requirements:
+    _permission: 'administer site configuration'

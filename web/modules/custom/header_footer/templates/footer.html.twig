@@ -1,0 +1,48 @@
+{# /** * @file * Default theme implementation to display something. * * Available variables: * - foo: Foo variable description. * * @see template_preprocess_header() * * @ingroup themeable */ #}
+<div class="btn-mobile-menu"></div>
+<div class="menu-ds-mobile">
+  <div class="footer row">
+    <!-- Col 1 -->
+    <div class="col-lg-3">
+      <div class="flex-ds">
+        <a href="{{data.url ? '/home' : '/'}}">
+          <img src="{{data.logo_footer}}" alt="" style="width: 159px;">
+        </a>
+      </div>
+      <div class="flex-ds">
+        <a class="link-gral" href="/faq">
+          Preguntas Frecuentes
+        </a>
+      </div>
+    </div>
+
+    <!-- Col 2 -->
+    <div class="col-lg-6 shared-site">
+      <h3>Redes</h3>
+      <div class="wrapper-shared">
+        <a href="{{data.facebook}}" target="_blank"><span class="icon-foot facebook"></span></a>
+        <a href="{{data.instagram}}" target="_blank"><span class="icon-foot instagram"></span></a>
+        <a href="https://api.whatsapp.com/send?phone={{data.whatsApp}}" target="_blank"><span
+            class="icon-foot whatsapp"></span></a>
+
+      </div>
+    </div>
+
+    <!-- Col 3 -->
+    <div class="col-lg-3 info-contact">
+      <h3>Contacto</h3>
+      <a href="/contact">
+        <p>{{data.email}}</p>
+      </a>
+      <p>Teléfono: {{data.phone_num}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="legal">
+      <p>{{data.txt_legal}}</p>
+    </div>
+    <div class="copy">
+      <p>Carvajal 2020 - Todos los derechos reservados</p>
+    </div>
+  </div>
+</div>

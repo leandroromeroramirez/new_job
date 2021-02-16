@@ -1,0 +1,17 @@
+<div id="carouselExampleControls" class="carousel slide slide-custom-products" data-interval="false" data-ride="carousel">
+  <div class="carousel-inner">
+    {% for key, prod in list %}
+    <div class="carousel-item {{key == '0' ? 'active': ''}}">
+     {{prod}}
+    </div>
+    {% endfor %}
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only" >Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only" >Next</span>
+  </a>
+</div>

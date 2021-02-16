@@ -1,0 +1,12 @@
+{# /** * @file * Default theme implementation to display something. * * Available variables: * - foo: Foo variable description. * * @see template_preprocess_header() * * @ingroup themeable */ #}
+        <div class="header-top ">
+          <a href="{{data.url ? '/home' : '/'}}">
+            <img src="{{data.logo}}" alt="">
+          </a>
+            <h1>
+                <b>{{data.txt_featured}}</b>
+                 {{data.txt_large}}
+            </h1>
+        </div>
+
+

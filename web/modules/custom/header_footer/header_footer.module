@@ -1,0 +1,53 @@
+<?php
+
+use Drupal\Component\Render\MarkupInterface;
+/**
+ * @file
+ * Primary module hooks for Header &amp; Footer module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function header_footer_theme() {
+  return [
+    'header_block' => [
+      'variables' => ['data' => NULL],
+      'template' => 'header',
+    ],
+    'footer_block' => [
+      'variables' => ['data' => NULL],
+      'template' => 'footer',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for header template.
+ *
+ * Default template: header.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - foo: Foo variable description.
+ */
+function template_preprocess_header(array &$variables) {
+  $variables['foo'] = 'bar';
+}
+
+
+
+/**
+ * Implements hook_preprocess_status_messages().
+ */
+function header_footer_preprocess_status_messages(&$variables) {
+
+  // Elimina el mensaje de status en todo el sitio
+  if(isset($variables['message_list']['status'])){
+    unset($variables['message_list']['status']);
+  }
+}

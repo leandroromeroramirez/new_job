@@ -1,0 +1,4 @@
+services:
+  tour_360.utilities:
+    class: Drupal\tour_360\Service\TourUtilitiesService
+    arguments: ['@entity_type.manager', '@config.factory']

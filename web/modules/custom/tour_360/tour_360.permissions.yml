@@ -1,0 +1,4 @@
+administer tour_360 configuration:
+  title: 'Administer tour_360 configuration'
+  description: 'Optional description.'
+  restrict access: true

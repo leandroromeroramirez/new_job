@@ -1,0 +1,23 @@
+system.admin_config_header_footer:
+  path: '/admin/config/header_footer'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Header & Footer'
+  requirements:
+    _permission: 'administer site configuration'
+
+header_footer.header_settings:
+  path: '/admin/config/header'
+  defaults:
+    _title: 'Header settings'
+    _form: 'Drupal\header_footer\Form\HeaderForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+header_footer.footer:
+  path: '/admin/config/footer'
+  defaults:
+    _title: 'Footer Settings'
+    _form: 'Drupal\header_footer\Form\FooterForm'
+  requirements:
+    _permission: 'administer site configuration'

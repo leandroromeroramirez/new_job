@@ -1,0 +1,4 @@
+administer header_footer configuration:
+  title: 'Administer header_footer configuration'
+  description: 'Optional description.'
+  restrict access: true

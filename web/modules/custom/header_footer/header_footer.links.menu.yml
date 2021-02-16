@@ -1,0 +1,20 @@
+header_footer.group.admin:
+  title: Header Footer
+  route_name: system.admin_config_header_footer
+  parent: system.admin_config
+  description: 'Group All config Header & Footer'
+  weight: -20
+
+header_footer.header_settings:
+  title: Config Header
+  route_name: header_footer.header_settings
+  description: 'Config Image 360'
+  parent: header_footer.group.admin
+  weight: 1
+
+header_footer.footer:
+  title: Config Footer
+  route_name: header_footer.footer
+  description: 'Config Footer'
+  parent: header_footer.group.admin
+  weight: 2

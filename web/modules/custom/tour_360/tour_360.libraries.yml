@@ -1,0 +1,37 @@
+# Custom module library for general purposes.
+marzipano.library:
+  remote: https://github.com/google/marzipano.git
+  version: 0.9.1
+  license:
+    name: MIT
+    url: https://github.com/google/marzipano/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/marzipano/dist/marzipano.js: {}
+
+tour_360.data:
+  js:
+    js/data.js: {}
+
+tour_360.vendor:
+  js:
+    js/vendor/bowser.min.js: {}
+    js/vendor/classList.js: {}
+    js/vendor/es5-shim.js: {}
+    js/vendor/eventShim.js: {}
+    js/vendor/requestAnimationFrame.js: {}
+    js/vendor/screenfull.min.js: {}
+  css:
+    theme:
+      js/vendor/reset.min.css: {}
+
+tour_360.marzipano_ie:
+  js:
+    js/marzipano_ie.js: {}
+  css:
+    theme:
+      css/marzipano.css: {}
+  dependencies:
+    - core/drupalSettings
+    - tour_360/marzipano.library
+    - tour_360/tour_360.vendor

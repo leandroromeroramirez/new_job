@@ -1,0 +1,13 @@
+tour_360.group.admin:
+  title: 'Tour 360'
+  route_name: system.admin_config_tour_360
+  parent: system.admin_config
+  description: 'Group Configuration Advertising'
+  weight: -30
+
+tour_360.plazoleta_config:
+  title: Plazoleta config
+  description: Configuracion de la Plazoleta 360
+  parent: tour_360.group.admin
+  route_name: tour_360.plazoleta_config
+  weight: 2

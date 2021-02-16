@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for tour_360 module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+function tour_360_page_attachments(array &$attachments) {
+  $utilities = \Drupal::service('tour_360.utilities');
+  $data = $utilities->createData();
+  if (!empty($data)) {
+    $attachments['#attached']['drupalSettings']['tour_360']['data'] = $data;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function tour_360_theme($existing, $type, $theme, $path) {
+  return [
+    'pop_up' => [
+      'variables' => [
+        'product' => NULL,
+      ],
+      'template' => 'pop-up',
+    ],
+    'pop_up_list' => [
+      'variables' => [
+        'list' => NULL,
+      ],
+      'template' => 'pop-up-list',
+    ],
+    'marzipano_theme' => [
+      'variables' => [
+        'data' => NULL,
+      ],
+      'template' => 'marzipano',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function tour_360_preprocess_html(&$variables) {
+  $theme_active = \Drupal::service('theme.manager')
+    ->getActiveTheme()
+    ->getName();
+}

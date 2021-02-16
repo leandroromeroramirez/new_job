@@ -1,0 +1,10 @@
+services:
+  header_footer.event_subscriber:
+    class: Drupal\header_footer\EventSubscriber\HeaderFooterSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }
+
+  utilities.service:
+    class: Drupal\header_footer\UtilitiesService
+    arguments: ['@entity_type.manager']

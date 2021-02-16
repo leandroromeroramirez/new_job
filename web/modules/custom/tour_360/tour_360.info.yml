@@ -1,0 +1,9 @@
+name: tour_360
+type: module
+description: Tour de tiendas 360
+package: Custom
+core_version_requirement: ^8 || ^9
+libraries:
+  - tour_360/tour_360.library
+dependencies:
+  - drupal:colorbox

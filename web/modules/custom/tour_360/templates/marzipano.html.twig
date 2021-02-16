@@ -1,0 +1,66 @@
+<div class="multiple-scenes view-control-buttons">
+
+  <div id="pano"></div>
+  <div id="sceneList">
+    <p>Mundos</p>
+    <ul class="scenes">
+      {% for scn in data %}
+      <li class="text">
+        <a href="javascript:void(0)" class="scene" data-id="{{scn.id}}">
+          <span>{{scn.name}}</span>
+          <div class="wrapper-img">
+            <img src="{{scn.url_image}}" alt="">
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Generated markup by the plugin -->
+  <div class="tooltip bs-tooltip-top" role="tooltip">
+    <div class="arrow"></div>
+    <div class="tooltip-inner">
+      Some tooltip text!
+    </div>
+  </div>
+
+  <div id="titleBar">
+    <h1 class="sceneName"></h1>
+  </div>
+
+  <a href="javascript:void(0)" id="autorotateToggle">
+    <img class="icon off" src="../../../../themes/custom/store_interfaz/source/images/marzipano/img/play.png" alt="">
+    <img class="icon on" src="../../../../themes/custom/store_interfaz/source/images/marzipano/img/pause.png" alt="">
+  </a>
+
+  <a href="javascript:void(0)" id="fullscreenToggle">
+    <img class="icon off" src="../../../../themes/custom/store_interfaz/source/images/marzipano/img/fullscreen.png"
+      alt="">
+    <img class="icon on" src="../../../../themes/custom/store_interfaz/source/images/marzipano/img/windowed.png" alt="">
+  </a>
+
+  <a href="javascript:void(0)" id="sceneListToggle">
+    <img class="icon off" src="../../../../themes/custom/store_interfaz/source/images/marzipano/img/expand.png">
+    <img class="icon on" src="../../../../themes/custom/store_interfaz/source/images/marzipano/img/collapse.png">
+  </a>
+
+  <!-- <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+    <img class="icon" src="img/up.png">
+  </a>
+  <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+    <img class="icon" src="img/down.png">
+  </a>
+  <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+    <img class="icon" src="img/left.png">
+  </a>
+  <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+    <img class="icon" src="img/right.png">
+  </a>
+  <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+    <img class="icon" src="img/plus.png">
+  </a>
+  <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+    <img class="icon" src="img/minus.png">
+  </a> -->
+</div>
