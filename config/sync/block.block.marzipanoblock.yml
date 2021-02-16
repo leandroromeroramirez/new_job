@@ -1,0 +1,25 @@
+uuid: 28261e78-45db-4f09-be9e-199202610f3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - tour_360
+  theme:
+    - bartik
+id: marzipanoblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: tour_360_marzipanoblock
+settings:
+  id: tour_360_marzipanoblock
+  label: MarzipanoBlock
+  provider: tour_360
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
