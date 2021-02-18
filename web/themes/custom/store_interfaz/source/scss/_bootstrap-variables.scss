@@ -1,0 +1,40 @@
+@import "../../node_modules/bootstrap/scss/variables";
+$path-fonts: "../fonts/";
+$path-images: "../images/";
+$primary : $red;
+
+// Base Colors
+$white: #fff;
+$black: #000;
+$picton-blue: #1CB3E9;
+$wild-sand:#F5F5F5;
+$deep-cerulean: #0077B6;
+$gray:#808080;
+$silver: #C5C5C5;
+$tundora:#434343;
+$silver-white:#C9C9C9;
+$azure-radiance:#0090FF;
+$yellow-marzi: #FDB812;
+
+.container {
+    max-width: 1280px !important;
+} 
+
+//breakpoints
+// Small devices (landscape phones, 576px and up)
+$small: 576px;
+$small-min: $small;
+// Medium devices (tablets, 1024px and up)
+$medium: 1024px;
+$medium-min: $medium;
+// Large devices (desktops, 992px and up)
+$large: 992px;
+$large-min: $large;
+// Extra large devices (large desktops, 1200px and up)
+$xlarge: 1200px;
+$xlarge-min: $xlarge;
+
+$xsmall-max: calc($small-min - 1);
+$small-max: calc($medium-min - 1);
+$medium-max: calc($large-min - 1);
+$large-max: calc($xlarge-min - 1);

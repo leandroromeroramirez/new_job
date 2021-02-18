@@ -1,0 +1,30 @@
+.wrapper-form-contact {
+    display: flex;
+    > div {
+        margin: 15px;
+    }
+    .contact-left {
+        
+    }
+    .contact-right {
+
+    }    
+}
+.contact-message-contactenos-form {
+    fieldset#edit-mail {
+        text-align: right;
+        margin-right: 20px;
+        margin-top: -10px;
+    }
+}
+@media (max-width: 1024px) {
+.wrapper-form-contact {
+    flex-direction: column;
+}
+.contact-message-contactenos-form {
+    fieldset#edit-mail {
+        text-align: center;
+        margin:0;
+    }
+}
+}

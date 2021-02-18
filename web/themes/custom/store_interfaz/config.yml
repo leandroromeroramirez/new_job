@@ -1,0 +1,22 @@
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist:
+    root: "build"
+    assets: "build"
+    libs: "build/libs"
+  src:
+    # Paths to static assets that aren't images, CSS, or JavaScript
+    folders:
+      - "source/{images,js,fonts}/*"
+      - "!source/{images,js,scss}/**/*"
+    images: "source/images"
+    js:
+      # Paths to your own project code are here
+      - "source/js/**/*.js"
+    scss:
+      - "source/scss/styles.scss"
+  # Path node modules
+  node_modules: "node_modules"
+DOMAIN:
+  proxy: "360store.drupalvm.test"

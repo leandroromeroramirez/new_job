@@ -380,7 +380,7 @@
   $(_document).bind('cbox_cleanup', function(){
     cartRefresh();
   });
-  
+
   $(_document).bind('cbox_complete', function(){
     let $iframe = $('#cboxContent').find('#cboxLoadedContent iframe');
     let src_iframe = $iframe.attr("src");
@@ -428,7 +428,7 @@
             href: $(this).data('href'),
           });
         });
-        $('[data-toggle="tooltip"]').tooltip();
+        // $('[data-toggle="tooltip"]').tooltip();
       });
     }
   };

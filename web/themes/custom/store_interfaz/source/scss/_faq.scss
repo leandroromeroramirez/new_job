@@ -1,0 +1,104 @@
+.page-vocabulary-preguntas {
+  .view-content {
+    .views-row {
+      width: 100%;
+      padding: 0px 15px;
+      .inline__links {
+        display: none
+      }
+    }
+  }
+}
+.node--type-faq {
+
+  .node__meta {
+      display: none;
+  }
+}
+.node--view-mode-teaser {    
+    border:none !important;
+    padding:0 !important;
+    h2 {
+        padding: 0  !important;
+        margin: 0 !important;
+        font-size: 20px;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        line-height: 27px;
+        a {
+            color:$tundora !important; 
+            text-decoration: none;
+        }
+      }
+      .field--type-text-with-summary {
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+            font-family: 'Open Sans';
+            font-weight: normal;
+            line-height: 24px;
+        }
+    }
+}
+
+#block-titulodelapagina {
+  .title {
+    margin: 0;
+    font-size: 32px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    line-height: 27px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    color: $tundora;
+  }
+}
+// a[href="/faq"] {
+//   background: pink;
+// }
+// a[href="/faq/general"] {
+//   background: red;
+// }
+// a[href="/faq/producto"] {
+//   background: green;
+// }
+// a[href="/faq/pedido"] {
+//   background: blue;
+// }
+.view-faq {
+  .view-content {
+    padding: 10px 20px 0px 15px;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .field-content {
+    a {
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      font-family: 'Open Sans';
+      font-weight: bold;
+      line-height: 27px;
+      color: #434343;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .views-field-body {
+    .field-content {
+      p {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        font-family: 'Open Sans';
+        font-weight: normal;
+        line-height: 24px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

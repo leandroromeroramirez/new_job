@@ -1,0 +1,280 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-BoldItalic.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-BoldItalic.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-BoldItalic.svg#OpenSans-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-ExtraBold.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-ExtraBold.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-ExtraBold.svg#OpenSans-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-Bold.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-Bold.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-ExtraBoldItalic.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-ExtraBoldItalic.svg#OpenSans-ExtraBoldItalic') format('svg');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-Light.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-Light.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-LightItalic.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-LightItalic.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-LightItalic.svg#OpenSans-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-Italic.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-Italic.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-Italic.svg#OpenSans-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-SemiBold.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-SemiBold.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-Regular.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-Regular.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$path-fonts}OpenSans-SemiBoldItalic.woff2') format('woff2'),
+      url('#{$path-fonts}OpenSans-SemiBoldItalic.woff') format('woff'),
+      url('#{$path-fonts}OpenSans-SemiBoldItalic.svg#OpenSans-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-Black.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-Black.woff') format('woff'),
+      url('#{$path-fonts}Raleway-Black.svg#Raleway-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-BlackItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-BlackItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-BlackItalic.svg#Raleway-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-Bold.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-Bold.woff') format('woff'),
+      url('#{$path-fonts}Raleway-Bold.svg#Raleway-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-ExtraBold.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-ExtraBold.woff') format('woff'),
+      url('#{$path-fonts}Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-BoldItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-BoldItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-BoldItalic.svg#Raleway-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-ExtraBoldItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-ExtraBoldItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-ExtraBoldItalic.svg#Raleway-ExtraBoldItalic') format('svg');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-ExtraLight.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-ExtraLight.woff') format('woff'),
+      url('#{$path-fonts}Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-ExtraLightItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-ExtraLightItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-ExtraLightItalic.svg#Raleway-ExtraLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-Italic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-Italic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-Italic.svg#Raleway-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-Light.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-Light.woff') format('woff'),
+      url('#{$path-fonts}Raleway-Light.svg#Raleway-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-Medium.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-Medium.woff') format('woff'),
+      url('#{$path-fonts}Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-LightItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-LightItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-Regular.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-Regular.woff') format('woff'),
+      url('#{$path-fonts}Raleway-Regular.svg#Raleway-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-MediumItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-MediumItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-Thin.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-Thin.woff') format('woff'),
+      url('#{$path-fonts}Raleway-Thin.svg#Raleway-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-SemiBoldItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-SemiBoldItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-SemiBoldItalic.svg#Raleway-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-SemiBold.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-SemiBold.woff') format('woff'),
+      url('#{$path-fonts}Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('#{$path-fonts}Raleway-ThinItalic.woff2') format('woff2'),
+      url('#{$path-fonts}Raleway-ThinItalic.woff') format('woff'),
+      url('#{$path-fonts}Raleway-ThinItalic.svg#Raleway-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+

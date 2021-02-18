@@ -1,0 +1,27 @@
+.table {
+    thead {
+        tr {
+            background: transparent;
+            border: 0 !important;
+            th {
+                font-family: 'Open Sans';
+                font-weight: 300 !important;
+                color: black !important;
+                border: 0 !important;
+                background: transparent !important;
+                font-size: 17px;
+            }
+        }        
+    }
+
+    tbody {
+        tr{
+            border-bottom: 2px solid #E5E5E5 !important;
+            background: transparent;
+            color: black;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-weight: 600;
+        }
+    }  
+}
